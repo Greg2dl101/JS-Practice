@@ -252,15 +252,65 @@ console.log(whatDoYouDo('designer', 'Mary'));
 
 *///***************************************************************************
 
+//Arrays
+
+/*
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+names[1] = 'Ben';
+
+console.log(names);
+console.log(names.length);
+
+names[names.length] = 'Mary';
+console.log(names);
+*/
+
+//CODING CHALLENGE 2
+//***************************************************************
+
+/*
+var calculateTip = function(bill){
+  if (bill < 50){
+    return bill * 0.2;
+  }
+  else if (bill >= 50 && bill <= 200) {
+    return bill * .15;
+  }
+  else {
+    return bill * .10;
+  }
+}
+
+var bills = [124, 48, 268];
+
+var tips = [];
+
+tips.push(calculateTip(bills[0]));
+tips.push(calculateTip(bills[1]));
+tips.push(calculateTip(bills[2]));
+
+var fullBill = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+/*
+fullBill.push(bills[0] + calculateTip(bills[0]));
+fullBill.push(bills[1] + calculateTip(bills[1]));
+fullBill.push(bills[2] + calculateTip(bills[2]));
 
 
 
+console.log(tips);
 
+console.log(fullBill);
 
+*///*************************************************************
 
+//Objects and properties.
 
-
-
+var john = {
+    firstName: 'John'
+}
 
 
 
